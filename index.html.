@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: #f0f4f8;
+            padding: 40px;
+        }
+        h1 {
+            color: #2563eb;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello, I'm Your Name 👋</h1>
+    <h3>Student | Web Developer</h3>
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>I am a passionate student learning technology
+        and building projects.</p>
+    </div>
+
+    <div class="card">
+        <h2>My Skills</h2>
+        <p>HTML | CSS | Python | Java</p>
+    </div>
+
+    <div class="card">
+        <h2>My Projects</h2>
+        <p>Project 1 - My First Website</p>
+        <p>Project 2 - Student Management System</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact Me</h2>
+        <p>Email: yourmail@gmail.com</p>
+        <p>GitHub: github.com/yourusername</p>
+    </div>
+
+</body>
+</html>
