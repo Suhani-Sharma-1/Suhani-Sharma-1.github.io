@@ -3,84 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suhani Sharma | Portfolio</title>
+
+<title>Suhani Sharma | Physics Portfolio</title>
+
+<meta name="description" content="Suhani Sharma's academic portfolio in Physics, science, research and technology.">
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f6ff;
-    color: #222;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0b14;
+    color: #f5f3ff;
+    line-height: 1.7;
+}
+
+:root {
+    --purple: #a78bfa;
+    --dark: #11111f;
+    --card: #171727;
+    --muted: #c4c0d5;
 }
 
 header {
-    background: #172554;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background: #11111f;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #29243c;
+}
+
+.logo {
+    color: var(--purple);
+    font-size: 23px;
+    font-weight: bold;
 }
 
 nav {
-    background: #1e3a8a;
-    padding: 15px;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--purple);
 }
 
 .hero {
-    background: #dbeafe;
-    padding: 75px 20px;
+    min-height: 520px;
+    padding: 110px 20px;
     text-align: center;
+    background:
+    radial-gradient(circle at 50% 20%, #39235e, transparent 55%),
+    linear-gradient(135deg, #10101e, #171127);
+}
+
+.hero .tag {
+    color: var(--purple);
+    letter-spacing: 3px;
+    font-size: 13px;
 }
 
 .hero h1 {
-    font-size: 38px;
-    color: #1e3a8a;
+    font-size: clamp(36px, 7vw, 58px);
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: var(--purple);
 }
 
 .hero p {
-    font-size: 19px;
-    margin: 12px;
+    max-width: 650px;
+    margin: auto;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 25px 8px 0;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: var(--purple);
+    color: #171127;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: white;
 }
 
 section {
-    max-width: 850px;
-    margin: 25px auto;
-    padding: 30px;
-    background: white;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 40px 30px;
+    background: var(--card);
+    border: 1px solid #29243c;
+    border-radius: 15px;
+}
+
+.section-title {
+    color: var(--purple);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.item {
+    background: #211c32;
+    border: 1px solid #382d50;
+    padding: 22px;
     border-radius: 12px;
 }
 
-h2 {
-    color: #1e3a8a;
-    margin-bottom: 15px;
+.item h3 {
+    color: #d6c6ff;
+    margin-bottom: 8px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .skills span {
-    display: inline-block;
-    background: #dbeafe;
-    padding: 10px 15px;
-    margin: 6px;
-    border-radius: 8px;
+    background: #302347;
+    color: #e9ddff;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.contact a {
+    color: var(--purple);
+    text-decoration: none;
 }
 
 footer {
-    background: #172554;
-    color: white;
+    background: #11111f;
     text-align: center;
-    padding: 20px;
+    padding: 30px 15px;
+    color: #aaa4bd;
+    margin-top: 40px;
+}
+
+footer span {
+    color: var(--purple);
+}
+
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 25px 20px;
+    }
+
+    .hero {
+        padding: 85px 20px;
+    }
 }
 </style>
 </head>
@@ -88,63 +202,192 @@ footer {
 <body>
 
 <header>
-    <h1>Suhani Sharma</h1>
-    <p>Welcome to My Personal Portfolio</p>
+    <div class="logo">SUHANI SHARMA</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#interests">Interests</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+<!-- HOME -->
 
 <div class="hero" id="home">
-    <h1>Hello, I'm Suhani! 👋</h1>
-    <p>Student | Aspiring Web Developer</p>
-    <p>Learning, Creating and Growing Every Day.</p>
+    <div class="tag">WELCOME TO MY PORTFOLIO</div>
+
+    <h1>Hello, I'm <span>Suhani Sharma</span></h1>
+
+    <p>
+        Physics Student | Science Enthusiast |
+        Aspiring Researcher
+    </p>
+
+    <p style="margin-top:18px;">
+        Exploring the laws of nature, understanding the universe
+        and discovering the possibilities of science and technology.
+    </p>
+
+    <a href="#about" class="btn">Explore My Journey</a>
+    <a href="#contact" class="btn">Contact Me</a>
 </div>
 
+<!-- ABOUT -->
+
 <section id="about">
-    <h2>About Me</h2>
+    <h2 class="section-title">About Me</h2>
+
     <p>
-        Hello! I am Suhani Sharma.
-        I am a student passionate about technology,
-        programming and web development.
-        I love learning new skills and creating projects.
+        Hello! I am Suhani Sharma, a Physics undergraduate
+        with a deep curiosity about the natural world.
+
+        I enjoy exploring scientific concepts, understanding
+        the principles behind physical phenomena and developing
+        analytical and problem-solving abilities.
+
+        I am passionate about continuous learning and interested
+        in the intersection of Physics, Mathematics, Research
+        and Technology.
+
+        My goal is to keep learning, growing and contributing
+        meaningfully to the scientific community.
     </p>
 </section>
 
-<section id="skills">
-    <h2>My Skills</h2>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Python</span>
-        <span>Java</span>
-        <span>Communication</span>
-        <span>Problem Solving</span>
+<!-- EDUCATION -->
+
+<section id="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="item">
+        <h3>Bachelor's Degree in Physics</h3>
+        <p>Undergraduate Studies</p>
+        <p>
+            Developing a strong academic foundation in Physics,
+            Mathematics and scientific principles.
+        </p>
+        <p>Institution: Add your college name</p>
     </div>
 </section>
 
-<section id="projects">
-    <h2>My Projects</h2>
-    <h3>1. Personal Portfolio Website</h3>
-    <p>Created my own portfolio using HTML and CSS.</p>
+<!-- INTERESTS -->
 
-    <h3>2. My Learning Projects</h3>
-    <p>Exploring programming and developing new skills.</p>
+<section id="interests">
+    <h2 class="section-title">Academic Interests</h2>
+
+    <div class="grid">
+        <div class="item">
+            <h3>Astrophysics</h3>
+            <p>Exploring stars, galaxies and the universe.</p>
+        </div>
+
+        <div class="item">
+            <h3>Quantum Physics</h3>
+            <p>Understanding matter and energy at microscopic scales.</p>
+        </div>
+
+        <div class="item">
+            <h3>Theoretical Physics</h3>
+            <p>Exploring mathematical models of physical phenomena.</p>
+        </div>
+
+        <div class="item">
+            <h3>Scientific Research</h3>
+            <p>Learning how scientific questions are investigated.</p>
+        </div>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: Add your email address here</p>
-    <p>GitHub: Suhani-Sharma-1</p>
+<!-- SKILLS -->
+
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="skills">
+        <span>Physics</span>
+        <span>Mathematics</span>
+        <span>Analytical Thinking</span>
+        <span>Problem Solving</span>
+        <span>Scientific Communication</span>
+        <span>Research Learning</span>
+        <span>HTML</span>
+        <span>CSS</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    <h2 class="section-title">Projects & Academic Work</h2>
+
+    <div class="grid">
+        <div class="item">
+            <h3>Academic Projects</h3>
+            <p>
+                A space to showcase Physics assignments,
+                laboratory work and academic projects.
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Personal Learning</h3>
+            <p>
+                Exploring scientific concepts, technology
+                and new areas of knowledge.
+            </p>
+        </div>
+
+        <div class="item">
+            <h3>Scientific Exploration</h3>
+            <p>
+                A collection of interesting scientific topics
+                and independent learning experiences.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section id="achievements">
+    <h2 class="section-title">Achievements & Certifications</h2>
+
+    <p>
+        This section will showcase academic achievements,
+        certificates, workshops, seminars and other milestones
+        as I continue my learning journey.
+    </p>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p>
+        I welcome opportunities to connect with students,
+        educators, researchers and people passionate about science.
+    </p>
+
+    <p style="margin-top:15px;">
+        GitHub:
+        <a href="https://github.com/Suhani-Sharma-1">
+        Visit My GitHub Profile
+        </a>
+    </p>
+
+    <p style="margin-top:10px;">
+        Email: Add your professional email address
+    </p>
 </section>
 
 <footer>
-    <p>© 2026 Suhani Sharma | My Portfolio</p>
+    <p>© 2026 Suhani Sharma. All Rights Reserved.</p>
+    <p>Learn. Explore. Discover. <span>✦</span></p>
 </footer>
 
 </body>
