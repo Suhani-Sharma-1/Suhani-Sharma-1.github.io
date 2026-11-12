@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Suhani Sharma | Physics Portfolio</title>
-
 <meta name="description" content="Suhani Sharma's academic portfolio in Physics, science, research and technology.">
 
 <style>
@@ -16,18 +14,18 @@
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0b0b14;
-    color: #f5f3ff;
-    line-height: 1.7;
-}
-
 :root {
     --purple: #a78bfa;
     --dark: #11111f;
     --card: #171727;
     --muted: #c4c0d5;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0b0b14;
+    color: #f5f3ff;
+    line-height: 1.7;
 }
 
 header {
@@ -56,7 +54,9 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
     font-size: 14px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -68,8 +68,8 @@ nav a:hover {
     padding: 110px 20px;
     text-align: center;
     background:
-    radial-gradient(circle at 50% 20%, #39235e, transparent 55%),
-    linear-gradient(135deg, #10101e, #171127);
+        radial-gradient(circle at 50% 20%, #39235e, transparent 55%),
+        linear-gradient(135deg, #10101e, #171127);
 }
 
 .hero .tag {
@@ -103,6 +103,7 @@ nav a:hover {
     color: #171127;
     font-weight: bold;
     text-decoration: none;
+    transition: background 0.3s;
 }
 
 .btn:hover {
@@ -126,6 +127,7 @@ section {
 
 section p {
     color: var(--muted);
+    margin-bottom: 12px;
 }
 
 .grid {
@@ -216,15 +218,13 @@ footer span {
 </header>
 
 <!-- HOME -->
-
 <div class="hero" id="home">
     <div class="tag">WELCOME TO MY PORTFOLIO</div>
 
     <h1>Hello, I'm <span>Suhani Sharma</span></h1>
 
     <p>
-        Physics Student | Science Enthusiast |
-        Aspiring Researcher
+        Physics Student | Science Enthusiast | Aspiring Researcher
     </p>
 
     <p style="margin-top:18px;">
@@ -237,29 +237,30 @@ footer span {
 </div>
 
 <!-- ABOUT -->
-
 <section id="about">
     <h2 class="section-title">About Me</h2>
 
     <p>
         Hello! I am Suhani Sharma, a Physics undergraduate
         with a deep curiosity about the natural world.
-
+    </p>
+    <p>
         I enjoy exploring scientific concepts, understanding
         the principles behind physical phenomena and developing
         analytical and problem-solving abilities.
-
+    </p>
+    <p>
         I am passionate about continuous learning and interested
         in the intersection of Physics, Mathematics, Research
         and Technology.
-
+    </p>
+    <p>
         My goal is to keep learning, growing and contributing
         meaningfully to the scientific community.
     </p>
 </section>
 
 <!-- EDUCATION -->
-
 <section id="education">
     <h2 class="section-title">Education</h2>
 
@@ -275,7 +276,6 @@ footer span {
 </section>
 
 <!-- INTERESTS -->
-
 <section id="interests">
     <h2 class="section-title">Academic Interests</h2>
 
@@ -303,7 +303,6 @@ footer span {
 </section>
 
 <!-- SKILLS -->
-
 <section id="skills">
     <h2 class="section-title">My Skills</h2>
 
@@ -316,78 +315,42 @@ footer span {
         <span>Research Learning</span>
         <span>HTML</span>
         <span>CSS</span>
+        <span>Python</span>
+        <span>Java</span>
     </div>
 </section>
 
 <!-- PROJECTS -->
-
 <section id="projects">
     <h2 class="section-title">Projects & Academic Work</h2>
 
     <div class="grid">
         <div class="item">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Designed and built a responsive academic portfolio using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="item">
             <h3>Academic Projects</h3>
             <p>
-                A space to showcase Physics assignments,
-                laboratory work and academic projects.
-            </p>
-        </div>
-
-        <div class="item">
-            <h3>Personal Learning</h3>
-            <p>
-                Exploring scientific concepts, technology
-                and new areas of knowledge.
-            </p>
-        </div>
-
-        <div class="item">
-            <h3>Scientific Exploration</h3>
-            <p>
-                A collection of interesting scientific topics
-                and independent learning experiences.
+                A space to showcase Physics assignments, lab work, and computational simulations.
             </p>
         </div>
     </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
-
-<section id="achievements">
-    <h2 class="section-title">Achievements & Certifications</h2>
-
-    <p>
-        This section will showcase academic achievements,
-        certificates, workshops, seminars and other milestones
-        as I continue my learning journey.
-    </p>
-</section>
-
 <!-- CONTACT -->
-
 <section id="contact" class="contact">
-    <h2 class="section-title">Let's Connect</h2>
-
-    <p>
-        I welcome opportunities to connect with students,
-        educators, researchers and people passionate about science.
-    </p>
-
-    <p style="margin-top:15px;">
-        GitHub:
-        <a href="https://github.com/Suhani-Sharma-1">
-        Visit My GitHub Profile
-        </a>
-    </p>
-
-    <p style="margin-top:10px;">
-        Email: Add your professional email address
-    </p>
+    <h2 class="section-title">Contact</h2>
+    <p>Feel free to reach out for academic discussions, research collaborations, or project opportunities.</p>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com" target="_blank">://github.com</a></p>
 </section>
 
 <footer>
-    <p>© 2026 Suhani Sharma. All Rights Reserved.</p>
-    <p>Learn. Explore. Discover. <span>✦</span></p>
+    <p>&copy; 2026 <span>Suhani Sharma</span>. All Rights Reserved.</p>
 </footer>
 
 </body>
